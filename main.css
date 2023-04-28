@@ -1,0 +1,92 @@
+* {
+    font-family: "Ruda", "sans-serif";
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10em;
+    padding: 0em 1em;
+}
+
+.dice-1,
+.dice-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.2em;
+}
+
+#dice-1,
+#dice-2 {
+    width: 1em;
+    height: 1em;
+    font-size: 3em;
+    border: 0px;
+    margin: 0em;
+}
+
+.button-2 {
+    background-color: #212121;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid #212121;
+    width: 6em;
+    height: 3em;
+    font-size: 0.9em;
+    margin: 1em;
+}
+
+.button-1 {
+    background-color: #fff;
+    color: #212121;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid #212121;
+    width: 6em;
+    height: 3em;
+    font-size: 0.9em;
+    margin: 1em;
+}
+
+p {
+    margin: 0em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 2em;
+    height: 2em;
+    border: 1px dashed #000;
+    background-color: #fff09e;
+    color: #663500;
+    font-size: 1.4em;
+    text-align: center;
+}
