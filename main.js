@@ -46,7 +46,7 @@ function dice1() {
 
     document.getElementById("1").innerHTML = 1;
     document.getElementById("2").innerHTML = 2;
-    document.getElementById("3").innerHTML = 3;
+    document.getElementById("3").innerHTML = 3 + '<i>22 Snake</i>';
     document.getElementById("4").innerHTML = 4;
     document.getElementById("5").innerHTML = 5;
     document.getElementById("6").innerHTML = 6;
@@ -154,6 +154,34 @@ function dice1() {
     document.getElementById("99").innerHTML = 99;
     document.getElementById("100").innerHTML = 100;
 
+    //snake
+
+    if (p1sum == 22) {
+        p1sum = 3
+    } else if (p1sum == 47) {
+        p1sum = 28
+    } else if (p1sum == 65) {
+        p1sum = 45
+    } else if (p1sum == 84) {
+        p1sum = 70
+    } else if (p1sum == 99) {
+        p1sum = 18
+    }
+
+    //ladder
+
+    if (p1sum == 2) {
+        p1sum = 33
+    } else if (p1sum == 29) {
+        p1sum = 48
+    } else if (p1sum == 55) {
+        p1sum = 94
+    } else if (p1sum == 73) {
+        p1sum = 97
+    } else if (p1sum == 88) {
+        p1sum = 95
+    }
+
     if (p1sum > 100) {
         p1sum = p1sum - number;
     }
@@ -203,7 +231,7 @@ function dice2() {
 
     document.getElementById("101").innerHTML = 1;
     document.getElementById("102").innerHTML = 2;
-    document.getElementById("103").innerHTML = 3;
+    document.getElementById("103").innerHTML = 3 + '<i>22 Snake</i>';
     document.getElementById("104").innerHTML = 4;
     document.getElementById("105").innerHTML = 5;
     document.getElementById("106").innerHTML = 6;
@@ -310,6 +338,34 @@ function dice2() {
     document.getElementById("198").innerHTML = 98;
     document.getElementById("199").innerHTML = 99;
     document.getElementById("200").innerHTML = 100;
+
+    //snake
+
+    if (p2sum == 122) {
+        p2sum = 103
+    } else if (p2sum == 147) {
+        p2sum = 128
+    } else if (p2sum == 165) {
+        p2sum = 145
+    } else if (p2sum == 184) {
+        p2sum = 170
+    } else if (p2sum == 199) {
+        p2sum = 118
+    }
+
+    //ladder
+
+    if (p2sum == 102) {
+        p2sum = 133
+    } else if (p2sum == 129) {
+        p2sum = 148
+    } else if (p2sum == 155) {
+        p2sum = 194
+    } else if (p2sum == 173) {
+        p2sum = 197
+    } else if (p2sum == 188) {
+        p2sum = 195
+    }
 
     if (p2sum > 200) {
         p2sum = p2sum - number;
