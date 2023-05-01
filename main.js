@@ -1,6 +1,9 @@
 let p1sum = 0;
 let p2sum = 100;
 
+// snake 22/3, 47/28, 65/45, 84/70, 99/18
+// ladder 2/33, 29/48, 55/94, 73/97, 88/95
+
 //audio function
 
 function audio() {
@@ -151,8 +154,19 @@ function dice1() {
     document.getElementById("99").innerHTML = 99;
     document.getElementById("100").innerHTML = 100;
 
+    if (p1sum > 100) {
+        p1sum = p1sum - number;
+    }
+
+    if (p1sum == 100) {
+        alert("Player Grey Won");
+    }
+
     document.getElementById(`${p1sum}`).innerHTML =
         '<i class="bi bi-circle-fill p1"></i>';
+
+    document.querySelector(".button-1").disabled = true;
+    document.querySelector(".button-2").disabled = false;
 }
 
 // dice 2 function
@@ -297,6 +311,17 @@ function dice2() {
     document.getElementById("199").innerHTML = 99;
     document.getElementById("200").innerHTML = 100;
 
+    if (p2sum > 200) {
+        p2sum = p2sum - number;
+    }
+
+    if (p2sum == 200) {
+        alert("Player Black Won");
+    }
+
     document.getElementById(`${p2sum}`).innerHTML =
         '<i class="bi bi-circle-fill p2"></i>';
+
+    document.querySelector(".button-1").disabled = false;
+    document.querySelector(".button-2").disabled = true;
 }

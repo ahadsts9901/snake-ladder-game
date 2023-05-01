@@ -128,6 +128,12 @@ row {
     align-items: center;
 }
 
+.center {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
 @media only screen and (max-width: 750px) {
     .maincontainer {
         flex-direction: column-reverse;
