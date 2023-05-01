@@ -27,156 +27,298 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 
     <script src="main.js"></script>
+
 </head>
 
 <body>
     <audio src="./media/audio/success sound.mp3" id="audio" preload="auto"></audio>
-    <h1 class="center"><i class="bi bi-dice-6-fill icon"></i> Snake Ladder Game</h1>
+    <h1 class="message"><i class="bi bi-dice-6-fill icon"></i> Snake Ladder Game</h1>
+    <h1 class="message-mobile"><i class="bi bi-dice-6-fill icon"></i> Saanp Seedhi</h1>
     <div class="maincontainer">
         <!-- dice -->
         <div class="dice">
             <div class="dice-1">
                 <p type="text" id="dice-1"></p>
-                <button class="button-1" type="button" onclick="dice1(event) ; audio();">Roll Dice</button>
-                <p>Player White</p>
+                <button class="button-1" type="button" onclick="dice1(); audio()">Roll Dice</button>
+                <p>Player Grey</p>
             </div>
             <div class="dice-2">
                 <p type="text" id="dice-2"></p>
-                <button class="button-2" type="button" onclick="dice2(event) ; audio();">Roll Dice</button>
+                <button class="button-2" type="button" onclick="dice2(); audio()">Roll Dice</button>
                 <p>Player Black</p>
             </div>
         </div>
-        <div class="container">
-            <!-- row 1 -->
-            <row>
-                <input readonly type="text" class="box" id="100" value="100" />
-                <input readonly type="text" class="box" id="099" value="99" />
-                <input readonly type="text" class="box" id="098" value="98" />
-                <input readonly type="text" class="box" id="097" value="97" />
-                <input readonly type="text" class="box" id="096" value="96" />
-                <input readonly type="text" class="box" id="095" value="95" />
-                <input readonly type="text" class="box" id="094" value="94" />
-                <input readonly type="text" class="box" id="093" value="93" />
-                <input readonly type="text" class="box" id="092" value="92" />
-                <input readonly type="text" class="box" id="091" value="91" />
-            </row>
-            <!-- row 2 -->
-            <row>
-                <input readonly type="text" class="box" id="081" value="81" />
-                <input readonly type="text" class="box" id="082" value="82" />
-                <input readonly type="text" class="box" id="083" value="83" />
-                <input readonly type="text" class="box" id="084" value="84" />
-                <input readonly type="text" class="box" id="085" value="85" />
-                <input readonly type="text" class="box" id="086" value="86" />
-                <input readonly type="text" class="box" id="087" value="87" />
-                <input readonly type="text" class="box" id="088" value="88" />
-                <input readonly type="text" class="box" id="089" value="89" />
-                <input readonly type="text" class="box" id="090" value="90" />
-            </row>
-            <!-- row 3 -->
-            <row>
-                <input readonly type="text" class="box" id="080" value="80" />
-                <input readonly type="text" class="box" id="079" value="79" />
-                <input readonly type="text" class="box" id="078" value="78" />
-                <input readonly type="text" class="box" id="077" value="77" />
-                <input readonly type="text" class="box" id="076" value="76" />
-                <input readonly type="text" class="box" id="075" value="75" />
-                <input readonly type="text" class="box" id="074" value="74" />
-                <input readonly type="text" class="box" id="073" value="73" />
-                <input readonly type="text" class="box" id="072" value="72" />
-                <input readonly type="text" class="box" id="071" value="71" />
-            </row>
-            <!-- row 4 -->
-            <row>
-                <input readonly type="text" class="box" id="061" value="61" />
-                <input readonly type="text" class="box" id="062" value="62" />
-                <input readonly type="text" class="box" id="063" value="63" />
-                <input readonly type="text" class="box" id="064" value="64" />
-                <input readonly type="text" class="box" id="065" value="65" />
-                <input readonly type="text" class="box" id="066" value="66" />
-                <input readonly type="text" class="box" id="067" value="67" />
-                <input readonly type="text" class="box" id="068" value="68" />
-                <input readonly type="text" class="box" id="069" value="69" />
-                <input readonly type="text" class="box" id="070" value="70" />
-            </row>
-            <!-- row 5 -->
-            <row>
-                <input readonly type="text" class="box" id="060" value="60" />
-                <input readonly type="text" class="box" id="059" value="59" />
-                <input readonly type="text" class="box" id="058" value="58" />
-                <input readonly type="text" class="box" id="057" value="57" />
-                <input readonly type="text" class="box" id="056" value="56" />
-                <input readonly type="text" class="box" id="055" value="55" />
-                <input readonly type="text" class="box" id="054" value="54" />
-                <input readonly type="text" class="box" id="053" value="53" />
-                <input readonly type="text" class="box" id="052" value="52" />
-                <input readonly type="text" class="box" id="051" value="51" />
-            </row>
-            <!-- row 6 -->
-            <row>
-                <input readonly type="text" class="box" id="041" value="41" />
-                <input readonly type="text" class="box" id="042" value="42" />
-                <input readonly type="text" class="box" id="043" value="43" />
-                <input readonly type="text" class="box" id="044" value="44" />
-                <input readonly type="text" class="box" id="045" value="45" />
-                <input readonly type="text" class="box" id="046" value="46" />
-                <input readonly type="text" class="box" id="047" value="47" />
-                <input readonly type="text" class="box" id="048" value="48" />
-                <input readonly type="text" class="box" id="049" value="49" />
-                <input readonly type="text" class="box" id="050" value="50" />
-            </row>
-            <!-- row 7 -->
-            <row>
-                <input readonly type="text" class="box" id="040" value="40" />
-                <input readonly type="text" class="box" id="039" value="39" />
-                <input readonly type="text" class="box" id="038" value="38" />
-                <input readonly type="text" class="box" id="037" value="37" />
-                <input readonly type="text" class="box" id="036" value="36" />
-                <input readonly type="text" class="box" id="035" value="35" />
-                <input readonly type="text" class="box" id="034" value="34" />
-                <input readonly type="text" class="box" id="033" value="33" />
-                <input readonly type="text" class="box" id="032" value="32" />
-                <input readonly type="text" class="box" id="031" value="31" />
-            </row>
-            <!-- row 8 -->
-            <row>
-                <input readonly type="text" class="box" id="021" value="21" />
-                <input readonly type="text" class="box" id="022" value="22" />
-                <input readonly type="text" class="box" id="023" value="23" />
-                <input readonly type="text" class="box" id="024" value="24" />
-                <input readonly type="text" class="box" id="025" value="25" />
-                <input readonly type="text" class="box" id="026" value="26" />
-                <input readonly type="text" class="box" id="027" value="27" />
-                <input readonly type="text" class="box" id="028" value="28" />
-                <input readonly type="text" class="box" id="029" value="29" />
-                <input readonly type="text" class="box" id="030" value="30" />
-            </row>
-            <!-- row 9 -->
-            <row>
-                <input readonly type="text" class="box" id="020" value="20" />
-                <input readonly type="text" class="box" id="019" value="19" />
-                <input readonly type="text" class="box" id="018" value="18" />
-                <input readonly type="text" class="box" id="017" value="17" />
-                <input readonly type="text" class="box" id="016" value="16" />
-                <input readonly type="text" class="box" id="015" value="15" />
-                <input readonly type="text" class="box" id="014" value="14" />
-                <input readonly type="text" class="box" id="013" value="13" />
-                <input readonly type="text" class="box" id="012" value="12" />
-                <input readonly type="text" class="box" id="011" value="11" />
-            </row>
-            <!-- row 10 -->
-            <row>
-                <input readonly type="text" class="box" id="1" value="1" />
-                <input readonly type="text" class="box" id="2" value="2" />
-                <input readonly type="text" class="box" id="3" value="3" />
-                <input readonly type="text" class="box" id="4" value="4" />
-                <input readonly type="text" class="box" id="5" value="5" />
-                <input readonly type="text" class="box" id="6" value="6" />
-                <input readonly type="text" class="box" id="7" value="7" />
-                <input readonly type="text" class="box" id="8" value="8" />
-                <input readonly type="text" class="box" id="9" value="9" />
-                <input readonly type="text" class="box" id="10" value="10" />
-            </row>
+        <div class="subcontainer">
+            <div class="container">
+
+                <!-- first player path -->
+
+                <!-- row 1 -->
+                <row>
+                    <p class="box" id="100">100</p>
+                    <p class="box" id="99">99</p>
+                    <p class="box" id="98">98</p>
+                    <p class="box" id="97">97</p>
+                    <p class="box" id="96">96</p>
+                    <p class="box" id="95">95</p>
+                    <p class="box" id="94">94</p>
+                    <p class="box" id="93">93</p>
+                    <p class="box" id="92">92</p>
+                    <p class="box" id="91">91</p>
+                </row>
+                <!-- row 2 -->
+                <row>
+                    <p class="box" id="81">81</p>
+                    <p class="box" id="82">82</p>
+                    <p class="box" id="83">83</p>
+                    <p class="box" id="84">84</p>
+                    <p class="box" id="85">85</p>
+                    <p class="box" id="86">86</p>
+                    <p class="box" id="87">87</p>
+                    <p class="box" id="88">88</p>
+                    <p class="box" id="89">89</p>
+                    <p class="box" id="90">90</p>
+                </row>
+                <!-- row 3 -->
+                <row>
+                    <p class="box" id="80">80</p>
+                    <p class="box" id="79">79</p>
+                    <p class="box" id="78">78</p>
+                    <p class="box" id="77">77</p>
+                    <p class="box" id="76">76</p>
+                    <p class="box" id="75">75</p>
+                    <p class="box" id="74">74</p>
+                    <p class="box" id="73">73</p>
+                    <p class="box" id="72">72</p>
+                    <p class="box" id="71">71</p>
+                </row>
+                <!-- row 4 -->
+                <row>
+                    <p class="box" id="61">61</p>
+                    <p class="box" id="62">62</p>
+                    <p class="box" id="63">63</p>
+                    <p class="box" id="64">64</p>
+                    <p class="box" id="65">65</p>
+                    <p class="box" id="66">66</p>
+                    <p class="box" id="67">67</p>
+                    <p class="box" id="68">68</p>
+                    <p class="box" id="69">69</p>
+                    <p class="box" id="70">70</p>
+                </row>
+                <!-- row 5 -->
+                <row>
+                    <p class="box" id="60">60</p>
+                    <p class="box" id="59">59</p>
+                    <p class="box" id="58">58</p>
+                    <p class="box" id="57">57</p>
+                    <p class="box" id="56">56</p>
+                    <p class="box" id="55">55</p>
+                    <p class="box" id="54">54</p>
+                    <p class="box" id="53">53</p>
+                    <p class="box" id="52">52</p>
+                    <p class="box" id="51">51</p>
+                </row>
+                <!-- row 6 -->
+                <row>
+                    <p class="box" id="41">41</p>
+                    <p class="box" id="42">42</p>
+                    <p class="box" id="43">43</p>
+                    <p class="box" id="44">44</p>
+                    <p class="box" id="45">45</p>
+                    <p class="box" id="46">46</p>
+                    <p class="box" id="47">47</p>
+                    <p class="box" id="48">48</p>
+                    <p class="box" id="49">49</p>
+                    <p class="box" id="50">50</p>
+                </row>
+                <!-- row 7 -->
+                <row>
+                    <p class="box" id="40">40</p>
+                    <p class="box" id="39">39</p>
+                    <p class="box" id="38">38</p>
+                    <p class="box" id="37">37</p>
+                    <p class="box" id="36">36</p>
+                    <p class="box" id="35">35</p>
+                    <p class="box" id="34">34</p>
+                    <p class="box" id="33">33</p>
+                    <p class="box" id="32">32</p>
+                    <p class="box" id="31">31</p>
+                </row>
+                <!-- row 8 -->
+                <row>
+                    <p class="box" id="21">21</p>
+                    <p class="box" id="22">22</p>
+                    <p class="box" id="23">23</p>
+                    <p class="box" id="24">24</p>
+                    <p class="box" id="25">25</p>
+                    <p class="box" id="26">26</p>
+                    <p class="box" id="27">27</p>
+                    <p class="box" id="28">28</p>
+                    <p class="box" id="29">29</p>
+                    <p class="box" id="30">30</p>
+                </row>
+                <!-- row 9 -->
+                <row>
+                    <p class="box" id="20">20</p>
+                    <p class="box" id="19">19</p>
+                    <p class="box" id="18">18</p>
+                    <p class="box" id="17">17</p>
+                    <p class="box" id="16">16</p>
+                    <p class="box" id="15">15</p>
+                    <p class="box" id="14">14</p>
+                    <p class="box" id="13">13</p>
+                    <p class="box" id="12">12</p>
+                    <p class="box" id="11">11</p>
+                </row>
+                <!-- row 10 -->
+                <row>
+                    <p class="box" id="1">1</p>
+                    <p class="box" id="2">2</p>
+                    <p class="box" id="3">3</p>
+                    <p class="box" id="4">4</p>
+                    <p class="box" id="5">5</p>
+                    <p class="box" id="6">6</p>
+                    <p class="box" id="7">7</p>
+                    <p class="box" id="8">8</p>
+                    <p class="box" id="9">9</p>
+                    <p class="box" id="10">10</p>
+                </row>
+
+            </div>
+            <div class="container-2">
+
+                <!-- row 1 -->
+                <row>
+                    <p class="box" id="200">100</p>
+                    <p class="box" id="199">99</p>
+                    <p class="box" id="198">98</p>
+                    <p class="box" id="197">97</p>
+                    <p class="box" id="196">96</p>
+                    <p class="box" id="195">95</p>
+                    <p class="box" id="194">94</p>
+                    <p class="box" id="193">93</p>
+                    <p class="box" id="192">92</p>
+                    <p class="box" id="191">91</p>
+                </row>
+                <!-- row 2 -->
+                <row>
+                    <p class="box" id="181">81</p>
+                    <p class="box" id="182">82</p>
+                    <p class="box" id="183">83</p>
+                    <p class="box" id="184">84</p>
+                    <p class="box" id="185">85</p>
+                    <p class="box" id="186">86</p>
+                    <p class="box" id="187">87</p>
+                    <p class="box" id="188">88</p>
+                    <p class="box" id="189">89</p>
+                    <p class="box" id="190">90</p>
+                </row>
+                <!-- row 3 -->
+                <row>
+                    <p class="box" id="180">80</p>
+                    <p class="box" id="179">79</p>
+                    <p class="box" id="178">78</p>
+                    <p class="box" id="177">77</p>
+                    <p class="box" id="176">76</p>
+                    <p class="box" id="175">75</p>
+                    <p class="box" id="174">74</p>
+                    <p class="box" id="173">73</p>
+                    <p class="box" id="172">72</p>
+                    <p class="box" id="171">71</p>
+                </row>
+                <!-- row 4 -->
+                <row>
+                    <p class="box" id="161">61</p>
+                    <p class="box" id="162">62</p>
+                    <p class="box" id="163">63</p>
+                    <p class="box" id="164">64</p>
+                    <p class="box" id="165">65</p>
+                    <p class="box" id="166">66</p>
+                    <p class="box" id="167">67</p>
+                    <p class="box" id="168">68</p>
+                    <p class="box" id="169">69</p>
+                    <p class="box" id="170">70</p>
+                </row>
+                <!-- row 5 -->
+                <row>
+                    <p class="box" id="160">60</p>
+                    <p class="box" id="159">59</p>
+                    <p class="box" id="158">58</p>
+                    <p class="box" id="157">57</p>
+                    <p class="box" id="156">56</p>
+                    <p class="box" id="155">55</p>
+                    <p class="box" id="154">54</p>
+                    <p class="box" id="153">53</p>
+                    <p class="box" id="152">52</p>
+                    <p class="box" id="151">51</p>
+                </row>
+                <!-- row 6 -->
+                <row>
+                    <p class="box" id="141">41</p>
+                    <p class="box" id="142">42</p>
+                    <p class="box" id="143">43</p>
+                    <p class="box" id="144">44</p>
+                    <p class="box" id="145">45</p>
+                    <p class="box" id="146">46</p>
+                    <p class="box" id="147">47</p>
+                    <p class="box" id="148">48</p>
+                    <p class="box" id="149">49</p>
+                    <p class="box" id="150">50</p>
+                </row>
+                <!-- row 7 -->
+                <row>
+                    <p class="box" id="140">40</p>
+                    <p class="box" id="139">39</p>
+                    <p class="box" id="138">38</p>
+                    <p class="box" id="137">37</p>
+                    <p class="box" id="136">36</p>
+                    <p class="box" id="135">35</p>
+                    <p class="box" id="134">34</p>
+                    <p class="box" id="133">33</p>
+                    <p class="box" id="132">32</p>
+                    <p class="box" id="131">31</p>
+                </row>
+                <!-- row 8 -->
+                <row>
+                    <p class="box" id="121">21</p>
+                    <p class="box" id="122">22</p>
+                    <p class="box" id="123">23</p>
+                    <p class="box" id="124">24</p>
+                    <p class="box" id="125">25</p>
+                    <p class="box" id="126">26</p>
+                    <p class="box" id="127">27</p>
+                    <p class="box" id="128">28</p>
+                    <p class="box" id="129">29</p>
+                    <p class="box" id="130">30</p>
+                </row>
+                <!-- row 9 -->
+                <row>
+                    <p class="box" id="120">20</p>
+                    <p class="box" id="119">19</p>
+                    <p class="box" id="118">18</p>
+                    <p class="box" id="117">17</p>
+                    <p class="box" id="116">16</p>
+                    <p class="box" id="115">15</p>
+                    <p class="box" id="114">14</p>
+                    <p class="box" id="113">13</p>
+                    <p class="box" id="112">12</p>
+                    <p class="box" id="111">11</p>
+                </row>
+                <!-- row 10 -->
+                <row>
+                    <p class="box" id="101">1</p>
+                    <p class="box" id="102">2</p>
+                    <p class="box" id="103">3</p>
+                    <p class="box" id="104">4</p>
+                    <p class="box" id="105">5</p>
+                    <p class="box" id="106">6</p>
+                    <p class="box" id="107">7</p>
+                    <p class="box" id="108">8</p>
+                    <p class="box" id="109">9</p>
+                    <p class="box" id="110">10</p>
+                </row>
+
+            </div>
         </div>
     </div>
 
