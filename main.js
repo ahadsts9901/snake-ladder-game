@@ -167,53 +167,53 @@ function dice1() {
 
     if (p1sum == 32) {
         p1sum = 10;
-        dangerAudio()
+        dangerAudio();
     } else if (p1sum == 36) {
         p1sum = 6;
-        dangerAudio()
+        dangerAudio();
     } else if (p1sum == 48) {
         p1sum = 26;
-        dangerAudio()
+        dangerAudio();
     } else if (p1sum == 62) {
         p1sum = 18;
-        dangerAudio()
+        dangerAudio();
     } else if (p1sum == 88) {
         p1sum = 24;
-        dangerAudio()
+        dangerAudio();
     } else if (p1sum == 95) {
         p1sum = 56;
-        dangerAudio()
+        dangerAudio();
     } else if (p1sum == 97) {
         p1sum = 78;
-        dangerAudio()
+        dangerAudio();
     }
 
     //ladder
 
     if (p1sum == 1) {
         p1sum = 38;
-        successAudio()
+        successAudio();
     } else if (p1sum == 4) {
         p1sum = 14;
-        successAudio()
+        successAudio();
     } else if (p1sum == 8) {
         p1sum = 10;
-        successAudio()
+        successAudio();
     } else if (p1sum == 28) {
         p1sum = 76;
-        successAudio()
+        successAudio();
     } else if (p1sum == 21) {
         p1sum = 42;
-        successAudio()
+        successAudio();
     } else if (p1sum == 50) {
         p1sum = 67;
-        successAudio()
+        successAudio();
     } else if (p1sum == 71) {
         p1sum = 92;
-        successAudio()
+        successAudio();
     } else if (p1sum == 80) {
         p1sum = 99;
-        successAudio()
+        successAudio();
     }
 
     if (p1sum > 100) {
@@ -223,6 +223,8 @@ function dice1() {
     if (p1sum == 100) {
         finishAudio();
         alert("Player White Won");
+        document.querySelector(".button-1").disabled = true;
+        document.querySelector(".button-2").disabled = true;
     }
 
     document.getElementById(`${p1sum}`).innerHTML =
@@ -378,53 +380,53 @@ function dice2() {
 
     if (p2sum == 132) {
         p2sum = 110;
-        dangerAudio()
+        dangerAudio();
     } else if (p2sum == 136) {
         p2sum = 106;
-        dangerAudio()
+        dangerAudio();
     } else if (p2sum == 148) {
         p2sum = 126;
-        dangerAudio()
+        dangerAudio();
     } else if (p2sum == 162) {
         p2sum = 118;
-        dangerAudio()
+        dangerAudio();
     } else if (p2sum == 188) {
         p2sum = 124;
-        dangerAudio()
+        dangerAudio();
     } else if (p2sum == 195) {
         p2sum = 156;
-        dangerAudio()
+        dangerAudio();
     } else if (p2sum == 197) {
         p2sum = 178;
-        dangerAudio()
+        dangerAudio();
     }
 
     //ladder
 
     if (p2sum == 101) {
         p2sum = 138;
-        successAudio()
+        successAudio();
     } else if (p2sum == 104) {
         p2sum = 114;
-        successAudio()
+        successAudio();
     } else if (p2sum == 108) {
         p2sum = 110;
-        successAudio()
+        successAudio();
     } else if (p2sum == 128) {
         p2sum = 176;
-        successAudio()
+        successAudio();
     } else if (p2sum == 121) {
         p2sum = 142;
-        successAudio()
+        successAudio();
     } else if (p2sum == 150) {
         p2sum = 167;
-        successAudio()
+        successAudio();
     } else if (p2sum == 171) {
         p2sum = 192;
-        successAudio()
+        successAudio();
     } else if (p2sum == 180) {
         p2sum = 199;
-        successAudio()
+        successAudio();
     }
 
     if (p2sum > 200) {
@@ -434,6 +436,8 @@ function dice2() {
     if (p2sum == 200) {
         finishAudio();
         alert("Player Black Won");
+        document.querySelector(".button-1").disabled = true;
+        document.querySelector(".button-2").disabled = true;
     }
 
     document.getElementById(`${p2sum}`).innerHTML =
