@@ -95,19 +95,26 @@ p {
     align-items: center;
     z-index: 20;
     position: absolute;
-    top: 5.1em;
+    top: 5.3em;
+}
+
+.background {
+    position: absolute;
+    width: 36em;
+    height: 36em;
+    /* opacity: 0.4; */
 }
 
 .p1 {
-    z-index: 40;
-    color: #797979;
-    font-size: 1.2em;
+    z-index: 70;
+    color: #fffbbe;
+    font-size: 1.3em;
 }
 
 .p2 {
     z-index: 60;
     color: #212121;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 row {
@@ -119,37 +126,19 @@ row {
 .box {
     width: 2.3em;
     height: 2.3em;
-    border: 1px dashed #000;
-    background-color: #fff09e;
-    color: #663500;
+    border: 0px;
     font-size: 1.4em;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.box-green {
-    background-color: #88ff8e;
-}
-
-.box-red {
-    background-color: #ff8e8e;
+    border: 1px solid #fff;
 }
 
 .center {
     width: 100%;
     text-align: center;
     margin-top: 1em;
-}
-
-i {
-    font-style: normal;
-    font-size: 0.6em;
-    color: #000;
-    font-weight: bolder;
-    line-height: 0.9em;
 }
 
 @media only screen and (max-width: 750px) {
@@ -168,6 +157,10 @@ i {
     .box {
         font-size: 1em;
     }
+    .background {
+        width: 26.2em;
+        height: 26.2em;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -185,6 +178,10 @@ i {
         width: 100%;
         text-align: center;
     }
+    .background {
+        width: 21.2em;
+        height: 21.2em;
+    }
 }
 
 @media only screen and (max-width: 325px) {
@@ -194,5 +191,9 @@ i {
     .dice {
         column-gap: 1em;
         font-size: 0.8em;
+    }
+    .background {
+        width: 16.2em;
+        height: 16.2em;
     }
 }
