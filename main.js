@@ -32,7 +32,6 @@ function dice1() {
 
     //player piece
     p1sum = p1sum + number;
-
     if (number === 1) {
         document.querySelector("#dice-1").innerHTML =
             '<i class="bi bi-dice-1 icon"></i>';
@@ -237,7 +236,7 @@ function dice1() {
 // dice 2 function
 
 function dice2() {
-    let Dice2 = "";
+    let Dice2 = '<i class="bi bi-circle-fill p2"></i>';
 
     let number = Math.random(Dice2) * 6;
     number = Number.parseInt(number);

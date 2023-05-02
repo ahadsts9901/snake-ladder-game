@@ -138,7 +138,7 @@ row {
 .center {
     width: 100%;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 @media only screen and (max-width: 750px) {
