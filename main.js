@@ -219,18 +219,18 @@ function dice1() {
         p1sum = p1sum - number;
     }
 
+    document.getElementById(`${p1sum}`).innerHTML =
+        '<i class="bi bi-circle-fill p1"></i>';
+
+    document.querySelector(".button-1").disabled = true;
+    document.querySelector(".button-2").disabled = false;
+
     if (p1sum == 100) {
         finishAudio();
         alert("Player White Won");
         document.querySelector(".button-1").disabled = true;
         document.querySelector(".button-2").disabled = true;
     }
-
-    document.getElementById(`${p1sum}`).innerHTML =
-        '<i class="bi bi-circle-fill p1"></i>';
-
-    document.querySelector(".button-1").disabled = true;
-    document.querySelector(".button-2").disabled = false;
 }
 
 // dice 2 function
@@ -432,16 +432,16 @@ function dice2() {
         p2sum = p2sum - number;
     }
 
+    document.getElementById(`${p2sum}`).innerHTML =
+        '<i class="bi bi-circle-fill p2"></i>';
+
+    document.querySelector(".button-1").disabled = false;
+    document.querySelector(".button-2").disabled = true;
+
     if (p2sum == 200) {
         finishAudio();
         alert("Player Black Won");
         document.querySelector(".button-1").disabled = true;
         document.querySelector(".button-2").disabled = true;
     }
-
-    document.getElementById(`${p2sum}`).innerHTML =
-        '<i class="bi bi-circle-fill p2"></i>';
-
-    document.querySelector(".button-1").disabled = false;
-    document.querySelector(".button-2").disabled = true;
 }
