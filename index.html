@@ -25,8 +25,6 @@
     <!-- animate.style cdn -->
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -48,14 +46,14 @@
                 <button class="button-1" type="button" onclick="dice1(); diceAudio()">
             Roll Dice
           </button>
-                <p>Player White</p>
+                <p id="player1"></p>
             </div>
             <div class="dice-2">
                 <p type="text" id="dice-2"></p>
                 <button class="button-2" type="button" onclick="dice2(); diceAudio()">
             Roll Dice
           </button>
-                <p>Player Black</p>
+                <p id="player2"></p>
             </div>
         </div>
         <div class="subcontainer">
@@ -334,8 +332,10 @@
             </div>
         </div>
     </div>
+    <h2 id="guide"></h2>
 
     <p class="center">Thanks For Visiting Regards! Muhammad Ahad&copy;</p>
+    <script src="main.js"></script>
 </body>
 
 </html>

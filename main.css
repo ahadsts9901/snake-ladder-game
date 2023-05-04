@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #212121;
 }
 
 .message {
@@ -146,6 +147,16 @@ row {
     /* background-color: bisque; */
 }
 
+#guide {
+    text-align: center;
+    background-color: #e2e2e2;
+    width: 8em;
+    padding: 0.2em 0.5em;
+    border-radius: 10px;
+    margin: 0em;
+    margin-top: 2em;
+}
+
 .center {
     width: 100%;
     text-align: center;
@@ -171,6 +182,14 @@ row {
     .background {
         width: 26.2em;
         height: 26.2em;
+    }
+    #dice-1,
+    #dice-2 {
+        font-size: 2em;
+    }
+    .button-1,
+    .button-2 {
+        font-size: 0.8em;
     }
 }
 

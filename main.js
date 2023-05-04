@@ -1,6 +1,24 @@
+let player1 = prompt('Enter First Player Name')
+let player2 = prompt('Enter Second Player Name')
+
+if (player1 === "") {
+    player1 = "Player White"
+} else {
+    player1 = player1
+}
+
+if (player2 === "") {
+    player2 = "Player Black"
+} else {
+    player2 = player2
+}
+
+
+document.getElementById('player1').innerHTML = player1
+document.getElementById('player2').innerHTML = player2
+
 let p1sum = 0;
 let p2sum = 100;
-
 //audio function
 
 function diceAudio() {
@@ -224,12 +242,14 @@ function dice1() {
 
     document.querySelector(".button-1").disabled = true;
     document.querySelector(".button-2").disabled = false;
+    document.getElementById('guide').innerHTML = `${player2} Turn`
 
     if (p1sum == 100) {
         finishAudio();
-        alert("Player White Won");
+        alert(`${player1} Won`);
         document.querySelector(".button-1").disabled = true;
         document.querySelector(".button-2").disabled = true;
+        document.getElementById('guide').innerHTML = `${player1} Won`
     }
 }
 
@@ -437,11 +457,13 @@ function dice2() {
 
     document.querySelector(".button-1").disabled = false;
     document.querySelector(".button-2").disabled = true;
+    document.getElementById('guide').innerHTML = `${player1} Turn`
 
     if (p2sum == 200) {
         finishAudio();
-        alert("Player Black Won");
+        alert(`${player2} Won`);
         document.querySelector(".button-1").disabled = true;
         document.querySelector(".button-2").disabled = true;
+        document.getElementById('guide').innerHTML = `${player2} Won`
     }
 }
