@@ -1,13 +1,13 @@
 let player1 = prompt('Enter First Player Name')
 let player2 = prompt('Enter Second Player Name')
 
-if (player1 === "" || player1 == null) {
+if (player1 === "" || player1 === null) {
     player1 = "Player White"
 } else {
     player1 = player1
 }
 
-if (player2 === "" || player2 == null) {
+if (player2 === "" || player2 === null) {
     player2 = "Player Black"
 } else {
     player2 = player2
